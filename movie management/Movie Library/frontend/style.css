@@ -1,0 +1,179 @@
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 60px;
+  color: #A0A0A0;
+  max-width: 580px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  text-transform: uppercase;
+  margin-top: 16px;
+  min-width: 250px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo>img {
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.addmovie-btn {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-transform: unset;
+  font-weight: 600 !important;
+}
+
+#movie-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 287px;
+  height: 314px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  background-size: cover;
+  margin: 0 20px 20px 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  user-select: none;
+  transition-duration: 1s;
+}
+
+.movie:hover {
+  transform: scale(1.2);
+  border: 1px solid #fff;
+  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.7);
+  transition-duration: 0.5s;
+  z-index: 999;
+}
+
+.movie>.info {
+  width: 100%;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.51);
+  border-radius: 22px 22px 18px 18px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 23px;
+}
+
+.movie>.info>h1 {
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.movie>.info>.genres,
+.movieInfoModal-genres {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #B8B8B8;
+}
+
+.movie>.info>.genres>div,
+.movieInfoModal-genres>div {
+  margin: 2px 5px;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid #b5b5b5a1;
+  color: #c3c3c3;
+  box-sizing: border-box;
+  border-radius: 19px;
+  padding: 5px 10px;
+}
+
+.movieInfoModal-genres>div {
+  border: 2px solid #646464;
+  font-weight: 700;
+  color: #646464;
+}
+
+.movie>.info>.rating {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 22px;
+  right: 0;
+  color: #fff;
+  padding: 1px 10px;
+  margin: 15px 18px;
+  display: flex;
+}
+
+.movie>.info>.rating>.star {
+  margin-left: -5px;
+  margin-top: -1px;
+}
+
+.imdb-img {
+  height: 32px;
+  margin-left: 15px;
+}
+
+.movieInfoModal-genres {
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #646464;
+  font-weight: 100;
+}
+
+.movieInfoModal-rating {
+  display: flex;
+  font-weight: 700;
+  color: #2e2c2c;
+  font-size: 20px;
+  margin-right: 9px;
+  font-family: 'PT Sans Narrow';
+}
+
+.movie-info{
+  font-family: 'PT Sans Narrow';
+  color: #7c7c7c;
+  font-weight: 100;
+}
+
+iframe {
+  border-radius: 10px;
+}
